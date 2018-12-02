@@ -1,7 +1,7 @@
-use ron_pest::ast::AstGraph;
+use ron_pest::Values;
 
 fn main() {
-    AstGraph::from_str(r#"Struct(
+    Values::from_str(r#"Struct(
     bar: "Bar", // Comment
-)"#);
+)"#).unwrap();
 }
